@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="18" passed="10" failed="0" skipped="0">
+<testng-results ignored="8" total="18" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T14:19:52 IST" name="Suite" finished-at="2025-03-17T14:24:22 IST" duration-ms="269392">
+  <suite started-at="2025-03-17T16:35:15 IST" name="Suite" finished-at="2025-03-17T16:38:57 IST" duration-ms="222356">
     <groups>
       <group name="regression">
         <method signature="CartTest.toverifycartItemsTest()[pri:0, instance:com.ecom.products.CartTest@15a34df2]" name="toverifycartItemsTest" class="com.ecom.products.CartTest"/>
@@ -10,13 +10,13 @@
       </group> <!-- regression -->
       <group name="smoke">
         <method signature="CustomerTest.tocheckNavigationToProductspagepageTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" name="tocheckNavigationToProductspagepageTest" class="com.ecom.products.CustomerTest"/>
+        <method signature="ProductstockTest.tocheckNavigationToProductspagepageTest()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" name="tocheckNavigationToProductspagepageTest" class="com.ecom.products.ProductstockTest"/>
         <method signature="TransactionpageTest.tocheckNavigationToTransactionpageTest()[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" name="tocheckNavigationToTransactionpageTest" class="com.ecom.products.TransactionpageTest"/>
-        <method signature="ProductstockTest.tocheckNavigationToProductspagepageTest()[pri:1, instance:com.ecom.products.ProductstockTest@4722ef0c]" name="tocheckNavigationToProductspagepageTest" class="com.ecom.products.ProductstockTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-03-17T14:19:52 IST" name="Test" finished-at="2025-03-17T14:24:22 IST" duration-ms="269392">
+    <test started-at="2025-03-17T16:35:15 IST" name="Test" finished-at="2025-03-17T16:38:57 IST" duration-ms="222356">
       <class name="com.ecom.products.ProductstockTest">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:22:45 IST" name="configBC" finished-at="2025-03-17T14:22:46 IST" duration-ms="1509" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:14 IST" name="configBC" finished-at="2025-03-17T16:38:15 IST" duration-ms="1552" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,41 +27,197 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:22:46 IST" name="configBM" finished-at="2025-03-17T14:22:48 IST" duration-ms="1137" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:15 IST" name="configBM" finished-at="2025-03-17T16:38:15 IST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="tocheckAddingProdtoBasketballCategoryTest()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:22:48 IST" name="tocheckAddingProdtoBasketballCategoryTest" finished-at="2025-03-17T14:23:04 IST" duration-ms="15914" status="PASS">
+        <test-method signature="tocheckAddingProdtoBasketballCategoryTest()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:15 IST" name="tocheckAddingProdtoBasketballCategoryTest" finished-at="2025-03-17T16:38:32 IST" duration-ms="16549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tocheckAddingProdtoBasketballCategoryTest -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:23:04 IST" name="configBM" finished-at="2025-03-17T14:23:04 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:32 IST" name="configBM" finished-at="2025-03-17T16:38:32 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="tocheckAddingProdtoStockTest()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:23:04 IST" name="tocheckAddingProdtoStockTest" finished-at="2025-03-17T14:24:20 IST" duration-ms="76410" status="PASS">
+        <test-method signature="tocheckAddingProdtoStockTest()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:32 IST" name="tocheckAddingProdtoStockTest" finished-at="2025-03-17T16:38:45 IST" duration-ms="13029" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55c3016433921eb8c909394e83a53ce7, isElementDisplayed {id=f.7FC3337CC562BEC3EAC20454E86DAD62.d.637C63C1F5F28E46031862765F445F8B.e.316}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Prave\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51503/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (55c3016433921eb8c909394e83a53ce7)] -> xpath: //a[text()='Add Product']]
+Session ID: 55c3016433921eb8c909394e83a53ce7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55c3016433921eb8c909394e83a53ce7, isElementDisplayed {id=f.7FC3337CC562BEC3EAC20454E86DAD62.d.637C63C1F5F28E46031862765F445F8B.e.316}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Prave\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51503/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (55c3016433921eb8c909394e83a53ce7)] -> xpath: //a[text()='Add Product']]
+Session ID: 55c3016433921eb8c909394e83a53ce7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+at com.ecom.generic.webdriverUtility.WebdriverUtility.WaitforElementToBePresent(WebdriverUtility.java:26)
+at com.ecom.products.ProductstockTest.tocheckAddingProdtoStockTest(ProductstockTest.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tocheckAddingProdtoStockTest -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:24:20 IST" name="configBM" finished-at="2025-03-17T14:24:20 IST" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:45 IST" name="configBM" finished-at="2025-03-17T16:38:46 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="tocheckNavigationToProductspagepageTest()[pri:1, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:24:20 IST" name="tocheckNavigationToProductspagepageTest" finished-at="2025-03-17T14:24:21 IST" duration-ms="1018" status="PASS">
+        <test-method signature="tocheckNavigationToProductspagepageTest()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:46 IST" name="tocheckNavigationToProductspagepageTest" finished-at="2025-03-17T16:38:56 IST" duration-ms="10311" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55c3016433921eb8c909394e83a53ce7, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Prave\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51503/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55c3016433921eb8c909394e83a53ce7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55c3016433921eb8c909394e83a53ce7, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Prave\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51503/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55c3016433921eb8c909394e83a53ce7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+at com.ecom.objectrepository.AdminLoginpage.adminlogin(AdminLoginpage.java:41)
+at com.ecom.products.ProductstockTest.tocheckNavigationToProductspagepageTest(ProductstockTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tocheckNavigationToProductspagepageTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T14:24:21 IST" name="configAC" finished-at="2025-03-17T14:24:22 IST" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.ProductstockTest@4722ef0c]" started-at="2025-03-17T16:38:56 IST" name="configAC" finished-at="2025-03-17T16:38:57 IST" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
       </class> <!-- com.ecom.products.ProductstockTest -->
       <class name="com.ecom.products.MessagesTest">
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T14:19:52 IST" name="configAS" finished-at="2025-03-17T14:19:52 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T16:35:14 IST" name="configAS" finished-at="2025-03-17T16:35:15 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T14:19:52 IST" name="configBC" finished-at="2025-03-17T14:19:56 IST" duration-ms="3361" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T16:35:15 IST" name="configBC" finished-at="2025-03-17T16:35:19 IST" duration-ms="4399" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,25 +228,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T14:19:56 IST" name="configBM" finished-at="2025-03-17T14:19:56 IST" duration-ms="574" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T16:35:19 IST" name="configBM" finished-at="2025-03-17T16:35:19 IST" duration-ms="488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="toverifyMessagesTest()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T14:19:56 IST" name="toverifyMessagesTest" finished-at="2025-03-17T14:20:19 IST" duration-ms="23099" status="PASS">
+        <test-method signature="toverifyMessagesTest()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T16:35:19 IST" name="toverifyMessagesTest" finished-at="2025-03-17T16:35:43 IST" duration-ms="23481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toverifyMessagesTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T14:20:19 IST" name="configAC" finished-at="2025-03-17T14:20:20 IST" duration-ms="443" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T16:35:43 IST" name="configAC" finished-at="2025-03-17T16:35:43 IST" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T14:24:22 IST" name="configBS" finished-at="2025-03-17T14:24:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.ecom.products.MessagesTest@239a307b]" started-at="2025-03-17T16:38:57 IST" name="configBS" finished-at="2025-03-17T16:38:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
       </class> <!-- com.ecom.products.MessagesTest -->
       <class name="com.ecom.products.CartTest">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T14:20:20 IST" name="configBC" finished-at="2025-03-17T14:20:21 IST" duration-ms="1415" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T16:35:43 IST" name="configBC" finished-at="2025-03-17T16:35:45 IST" duration-ms="1503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,21 +257,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T14:20:21 IST" name="configBM" finished-at="2025-03-17T14:20:22 IST" duration-ms="1098" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T16:35:45 IST" name="configBM" finished-at="2025-03-17T16:35:45 IST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="toverifycartItemsTest()[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T14:20:22 IST" name="toverifycartItemsTest" finished-at="2025-03-17T14:20:30 IST" duration-ms="7649" status="PASS">
+        <test-method signature="toverifycartItemsTest()[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T16:35:45 IST" name="toverifycartItemsTest" finished-at="2025-03-17T16:35:54 IST" duration-ms="8475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toverifycartItemsTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T14:20:30 IST" name="configAC" finished-at="2025-03-17T14:20:31 IST" duration-ms="533" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.CartTest@15a34df2]" started-at="2025-03-17T16:35:54 IST" name="configAC" finished-at="2025-03-17T16:35:54 IST" duration-ms="483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
       </class> <!-- com.ecom.products.CartTest -->
       <class name="com.ecom.products.CustomerTest">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:20:46 IST" name="configBC" finished-at="2025-03-17T14:20:47 IST" duration-ms="1390" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:36:08 IST" name="configBC" finished-at="2025-03-17T16:36:09 IST" duration-ms="1396" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,45 +282,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:20:47 IST" name="configBM" finished-at="2025-03-17T14:20:48 IST" duration-ms="1190" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:36:09 IST" name="configBM" finished-at="2025-03-17T16:36:10 IST" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="TocheckupdatedCustomerInfoTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:20:48 IST" name="TocheckupdatedCustomerInfoTest" finished-at="2025-03-17T14:21:07 IST" duration-ms="19034" status="PASS">
+        <test-method signature="TocheckupdatedCustomerInfoTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:36:10 IST" name="TocheckupdatedCustomerInfoTest" finished-at="2025-03-17T16:36:29 IST" duration-ms="18963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TocheckupdatedCustomerInfoTest -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:21:07 IST" name="configBM" finished-at="2025-03-17T14:21:07 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:36:29 IST" name="configBM" finished-at="2025-03-17T16:36:29 IST" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="endToend_toverifyCustomerInfoTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:21:07 IST" name="endToend_toverifyCustomerInfoTest" finished-at="2025-03-17T14:22:20 IST" duration-ms="72855" status="PASS">
+        <test-method signature="endToend_toverifyCustomerInfoTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:36:29 IST" name="endToend_toverifyCustomerInfoTest" finished-at="2025-03-17T16:37:44 IST" duration-ms="74970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToend_toverifyCustomerInfoTest -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:22:20 IST" name="configBM" finished-at="2025-03-17T14:22:21 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:37:44 IST" name="configBM" finished-at="2025-03-17T16:37:44 IST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="tocheckNavigationToProductspagepageTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:22:21 IST" name="tocheckNavigationToProductspagepageTest" finished-at="2025-03-17T14:22:32 IST" duration-ms="11239" status="PASS">
+        <test-method signature="tocheckNavigationToProductspagepageTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:37:44 IST" name="tocheckNavigationToProductspagepageTest" finished-at="2025-03-17T16:37:55 IST" duration-ms="11166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tocheckNavigationToProductspagepageTest -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:22:32 IST" name="configBM" finished-at="2025-03-17T14:22:32 IST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:37:55 IST" name="configBM" finished-at="2025-03-17T16:37:55 IST" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="toverifyCustomerpageTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:22:32 IST" name="toverifyCustomerpageTest" finished-at="2025-03-17T14:22:44 IST" duration-ms="12488" status="PASS">
+        <test-method signature="toverifyCustomerpageTest()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:37:55 IST" name="toverifyCustomerpageTest" finished-at="2025-03-17T16:38:13 IST" duration-ms="17822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toverifyCustomerpageTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T14:22:44 IST" name="configAC" finished-at="2025-03-17T14:22:45 IST" duration-ms="481" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.CustomerTest@338fc1d8]" started-at="2025-03-17T16:38:13 IST" name="configAC" finished-at="2025-03-17T16:38:14 IST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
       </class> <!-- com.ecom.products.CustomerTest -->
       <class name="com.ecom.products.TransactionpageTest">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T14:20:31 IST" name="configBC" finished-at="2025-03-17T14:20:32 IST" duration-ms="1404" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T16:35:54 IST" name="configBC" finished-at="2025-03-17T16:35:55 IST" duration-ms="1434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,15 +331,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T14:20:32 IST" name="configBM" finished-at="2025-03-17T14:20:33 IST" duration-ms="1087" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T16:35:55 IST" name="configBM" finished-at="2025-03-17T16:35:56 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="tocheckNavigationToTransactionpageTest()[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T14:20:33 IST" name="tocheckNavigationToTransactionpageTest" finished-at="2025-03-17T14:20:45 IST" duration-ms="12087" status="PASS">
+        <test-method signature="tocheckNavigationToTransactionpageTest()[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T16:35:56 IST" name="tocheckNavigationToTransactionpageTest" finished-at="2025-03-17T16:36:08 IST" duration-ms="11566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tocheckNavigationToTransactionpageTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T14:20:45 IST" name="configAC" finished-at="2025-03-17T14:20:46 IST" duration-ms="501" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.ecom.products.TransactionpageTest@5b38c1ec]" started-at="2025-03-17T16:36:08 IST" name="configAC" finished-at="2025-03-17T16:36:08 IST" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
-	<groups>
-		<run>
-			<include name="smoke"></include>
-			<include name="regression"></include>
-		</run>
-	</groups>
+	<listeners>
+		<listener class-name="com.ecom.generic.listenerutility.ListenerImpclass"></listener>
+	</listeners>
+
 	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
 		<classes>
 			<class name="com.ecom.products.CartTest" />
 			<class name="com.ecom.products.TransactionpageTest" />
@@ -16,7 +18,8 @@
 			<class name="com.ecom.products.CustomerTest" />
 			<class name="com.ecom.products.ProductstockTest" />
 		</classes>
-	</test> <!--
-	Test -->
+	</test>
+
+
 </suite> <!--
 Suite -->

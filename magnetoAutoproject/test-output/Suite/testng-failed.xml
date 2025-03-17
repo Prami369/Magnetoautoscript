@@ -6,16 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ecom.products.CustomerTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configBC"/>
-          <include name="configBS"/>
-          <include name="endToend_toverifyCustomerInfoTest"/>
-          <include name="configAC"/>
-          <include name="configAS"/>
-        </methods>
-      </class> <!-- com.ecom.products.CustomerTest -->
       <class name="com.ecom.products.ProductstockTest">
         <methods>
           <include name="tocheckNavigationToProductspagepageTest"/>
@@ -24,6 +14,7 @@
           <include name="configBS"/>
           <include name="configAC"/>
           <include name="configAS"/>
+          <include name="tocheckAddingProdtoStockTest"/>
         </methods>
       </class> <!-- com.ecom.products.ProductstockTest -->
     </classes>
