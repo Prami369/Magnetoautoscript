@@ -65,6 +65,7 @@ public class ListenerImpclass  implements ITestListener, ISuiteListener{
 		TakesScreenshot edriver =  (TakesScreenshot)Basetest.sdriver;
 		 String filepath=edriver.getScreenshotAs(OutputType.BASE64);	 
 		test.addScreenCaptureFromBase64String(filepath, methodname+timestamp);
+		test.log(Status.FAIL, result.getThrowable());
 		test.log(Status.FAIL, result.getMethod().getMethodName()+"=======failed");		
 	}
 
