@@ -8,17 +8,24 @@
     <classes>
       <class name="com.ecom.products.CustomerTest">
         <methods>
-          <include name="toverifyCustomerpageTest"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="endToend_toverifyCustomerInfoTest"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+        </methods>
+      </class> <!-- com.ecom.products.CustomerTest -->
+      <class name="com.ecom.products.ProductstockTest">
+        <methods>
+          <include name="tocheckNavigationToProductspagepageTest"/>
           <include name="configBM"/>
           <include name="configBC"/>
           <include name="configBS"/>
           <include name="configAC"/>
           <include name="configAS"/>
-          <include name="TocheckupdatedCustomerInfoTest"/>
-          <include name="tocheckNavigationToProductspagepageTest"/>
-          <include name="toverifyCustomerInfoTest"/>
         </methods>
-      </class> <!-- com.ecom.products.CustomerTest -->
+      </class> <!-- com.ecom.products.ProductstockTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

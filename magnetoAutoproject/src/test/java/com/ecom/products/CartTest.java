@@ -43,10 +43,11 @@ public class CartTest extends Basetest {
 		
 		Welcomepage wc = new Welcomepage(driver);
 		wc.getUserloginlink().click();
-		Thread.sleep(2000);
+
 		System.out.println(UtilityclassObject.getTest());
 		UtilityclassObject.getTest().log(Status.PASS, "clicked on user login link");
 		lg = new Userloginpage(driver);
+		wutil.WaitforElementToBePresent(driver, lg.getEmailtxtfield(), 3);
 		lg.userLogintoAppliaction(email, password);
 		UtilityclassObject.getTest().log(Status.PASS, "logged in to user account");
 		hm = new Homepage(driver);

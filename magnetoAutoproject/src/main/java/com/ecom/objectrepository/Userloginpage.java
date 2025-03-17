@@ -16,7 +16,7 @@ WebDriver driver;
 	
 	@FindBy(name = "email")
 	private WebElement emailtxtfield;
-	
+
 	@FindBy(name = "password")
 	private WebElement passwordtxtField;
 	
@@ -26,9 +26,13 @@ WebDriver driver;
 	@FindBy(xpath = "//button[text()='Close']")
 	private WebElement logincloseBtn;
 
+	public WebElement getEmailtxtfield() {
+		return emailtxtfield;
+	}
+
 	
 	public void userLogintoAppliaction(String email, String password) throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		emailtxtfield.sendKeys(email);
 		passwordtxtField.sendKeys(password);
 		

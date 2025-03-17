@@ -26,8 +26,18 @@ public class AdminLoginpage  extends WebdriverUtility{
 	@FindBy(name = "enter")
 	private WebElement enterbtn;
 
-	public void adminlogin( String username, String adminpassword) {
+	public void adminlogin( String username, String adminpassword) throws InterruptedException {
 		waitforPageLoad(driver);
+		Welcomepage wc = new Welcomepage(driver);
+		for(;;) {
+			try {
+					wc.getAdminLoginlink().click();
+					break;
+			} catch(Exception e) {
+				driver.navigate().to("http://49.249.28.218:8081/AppServer/Online_Shopping_Alphaware/admin/admin_index.php");
+				break;
+			}
+		}
 		usernametxtfield.sendKeys(username);
 		passwordtxtfield.sendKeys(adminpassword);
 		enterbtn.click();

@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -63,9 +64,12 @@ public String pwd;
 	@BeforeClass (alwaysRun = true)
 	public void configBC(@Optional("chrome") String browser) throws IOException {
 //		String Browsername = putil.getDataFromPropertyfile("browser");
+		
 		String Browsername =browser;
 		if(Browsername.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			ChromeOptions opt = new ChromeOptions();
+			opt.addArguments("--disable-notifications");
+			driver = new ChromeDriver(opt);
 		}else if(Browsername.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		}else if(Browsername.equalsIgnoreCase("edge")) {

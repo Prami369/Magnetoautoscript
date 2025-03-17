@@ -21,10 +21,10 @@ import com.ecom.objectrepository.Welcomepage;
 public class CustomerTest extends Basetest{
 	
 	@Test(groups="smoke")
-	public void tocheckNavigationToProductspagepageTest() {
+	public void tocheckNavigationToProductspagepageTest() throws InterruptedException {
 		
 		Welcomepage wc = new Welcomepage(driver);
-		wc.getAdminLoginlink().click();
+		wc.getAdminLoginlink().click();	
 		AdminLoginpage lpp = new AdminLoginpage(driver);
 		lpp.adminlogin(username, pwd);		
 		AdminHomepage adhome = new AdminHomepage(driver);
@@ -34,20 +34,21 @@ public class CustomerTest extends Basetest{
 	
 	@Test 
 	public void toverifyCustomerpageTest() throws EncryptedDocumentException, IOException, InterruptedException {
-	String firstname = eutil.getDtaFromExcel("Sheet3", 3, 0);
-	String lastname = eutil.getDtaFromExcel("Sheet3", 3, 1);
-	String midname = eutil.getDtaFromExcel("Sheet3", 3, 2);
-	String mobnum = eutil.getDtaFromExcel("Sheet3", 3, 3);
-	String address = eutil.getDtaFromExcel("Sheet3", 3, 4);
-	String provi = eutil.getDtaFromExcel("Sheet3", 3, 5);
-	String email = eutil.getDtaFromExcel("Sheet3", 3, 6);
-	String zipcode = eutil.getDtaFromExcel("Sheet3", 3, 7);
-	String password = eutil.getDtaFromExcel("Sheet3", 3, 8);
+	String firstname = eutil.getDtaFromExcel("Sheet3", 5, 0);
+	String lastname = eutil.getDtaFromExcel("Sheet3", 5, 1);
+	String midname = eutil.getDtaFromExcel("Sheet3", 5, 2);
+	String mobnum = eutil.getDtaFromExcel("Sheet3", 5, 3);
+	String address = eutil.getDtaFromExcel("Sheet3", 5, 4);
+	String provi = eutil.getDtaFromExcel("Sheet3", 5, 5);
+	String email = eutil.getDtaFromExcel("Sheet3", 5, 6);
+	String zipcode = eutil.getDtaFromExcel("Sheet3", 5, 7);
+	String password = eutil.getDtaFromExcel("Sheet3", 5, 8);
 		
 	Welcomepage wc = new Welcomepage(driver);
 	wc.getSignUplink().click();
 	Signuppage sp = new Signuppage(driver);
-	wutil.WaitforElementToBePresent(driver, sp.getFirstname(), 2);
+	Thread.sleep(2000);
+//	wutil.WaitforElementToBePresent(driver, sp.getFirstname(), 2);
 	sp.getFirstname().sendKeys(firstname);
 	sp.getLastname().sendKeys(lastname);
 	sp.getMnametxtfield().sendKeys(midname);
@@ -59,9 +60,11 @@ public class CustomerTest extends Basetest{
 	sp.getPasswordtxtfield().sendKeys(password);
 	sp.getEmailtxtfield().sendKeys(email);
 	sp.getSignupBtn().click();
-	
-	
+	Thread.sleep(1000);
+	wutil.WaitforElementToBePresent(driver, wc.getAdminLoginlink(), 1);
 	wc.getAdminLoginlink().click();
+	
+
 	AdminLoginpage lpp = new AdminLoginpage(driver);
 	lpp.adminlogin(username, pwd);
 	
@@ -94,6 +97,7 @@ public class CustomerTest extends Basetest{
 		Thread.sleep(1000);
 		hm.getLogoutlink().click();
 		wc.getAdminLoginlink().click();
+
 		AdminLoginpage lpp = new AdminLoginpage(driver);
 		lpp.adminlogin(username, pwd);
 		AdminHomepage adhome = new AdminHomepage(driver);
@@ -103,18 +107,19 @@ public class CustomerTest extends Basetest{
 		Assert.assertTrue(cp.getlistOf_usermobnum().contains(altmobnum));
 		adhome.adminlogout();
 	}
+	
 	@Test
-	public void toverifyCustomerInfoTest() throws EncryptedDocumentException, IOException, InterruptedException {
-		String firstname = eutil.getDtaFromExcel("Sheet3", 2, 0);
-		String lastname = eutil.getDtaFromExcel("Sheet3", 2, 1);
-		String midname = eutil.getDtaFromExcel("Sheet3", 2, 2);
-		String mobnum = eutil.getDtaFromExcel("Sheet3", 2, 3);
-		String address = eutil.getDtaFromExcel("Sheet3", 2, 4);
-		String provi = eutil.getDtaFromExcel("Sheet3", 2, 5);
-		String email = eutil.getDtaFromExcel("Sheet3", 2, 6);
-		String zipcode = eutil.getDtaFromExcel("Sheet3", 2, 7);
-		String password = eutil.getDtaFromExcel("Sheet3", 2, 8);	
-		String altmobnum = eutil.getDtaFromExcel("Sheet3", 2, 9);		
+	public void endToend_toverifyCustomerInfoTest() throws EncryptedDocumentException, IOException, InterruptedException {
+		String firstname = eutil.getDtaFromExcel("Sheet3", 4, 0);
+		String lastname = eutil.getDtaFromExcel("Sheet3", 4, 1);
+		String midname = eutil.getDtaFromExcel("Sheet3", 4, 2);
+		String mobnum = eutil.getDtaFromExcel("Sheet3", 4, 3);
+		String address = eutil.getDtaFromExcel("Sheet3", 4, 4);
+		String provi = eutil.getDtaFromExcel("Sheet3", 4, 5);
+		String email = eutil.getDtaFromExcel("Sheet3", 4, 6);
+		String zipcode = eutil.getDtaFromExcel("Sheet3", 4, 7);
+		String password = eutil.getDtaFromExcel("Sheet3", 4, 8);	
+		String altmobnum = eutil.getDtaFromExcel("Sheet3", 4, 9);		
 	
 		
 		Userloginpage lg = new Userloginpage(driver);				
@@ -125,7 +130,7 @@ public class CustomerTest extends Basetest{
 		sp.getFirstname().sendKeys(firstname);
 		sp.getLastname().sendKeys(lastname);
 		sp.getMnametxtfield().sendKeys(midname);
-		Thread.sleep(2000);
+		wutil.WaitforElementToBePresent(driver, sp.getProvinancetxtfield(), 2);		
 		sp.getProvinancetxtfield().sendKeys(provi);
 		sp.getZipcodetxtfield().sendKeys(zipcode);
 		sp.getMobiletxtfield().sendKeys(mobnum);
@@ -139,19 +144,20 @@ public class CustomerTest extends Basetest{
 		AdminHomepage adhome = new AdminHomepage(driver);
 		adhome.getCustomerlink().click();
 		Customerpage cp = new Customerpage(driver);
-		System.out.println(cp.getlistOf_usermobnum().contains(mobnum));
 		Assert.assertEquals(cp.getlistOf_useremail().contains(email), true);
 		adhome.adminlogout();
 		Homepage hm = new Homepage(driver);
-		
 		while(true) {
-		try {					
-			hm.getProductlink().click();
-			break;
-		}catch(Throwable e) {
-			driver.navigate().back();
-		}	
-		}	
+			try {					
+				hm.getProductlink().click();
+				break;
+			}catch(Throwable e) {
+				driver.navigate().back();
+			}	
+			}
+		
+		
+		Thread.sleep(1000);	
 		wc.getUserloginlink().click();
 		Thread.sleep(1000);
 		lg.userLogintoAppliaction(email, password);	
@@ -164,6 +170,7 @@ public class CustomerTest extends Basetest{
 		accpg.getSavechangesBtn().click();
 		hm.getLogoutlink().click();
 		wc.getAdminLoginlink().click();
+
 		lpp.adminlogin(username, pwd);
 		adhome.getCustomerlink().click();
 		System.out.println(cp.getlistOf_usermobnum().contains(altmobnum));

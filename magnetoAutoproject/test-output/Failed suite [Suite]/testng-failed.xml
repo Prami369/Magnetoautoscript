@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.ecom.generic.listenerutility.ListenerImpclass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="com.ecom.products.CustomerTest">
+        <methods>
+          <include name="toverifyCustomerpageTest"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+        </methods>
+      </class> <!-- com.ecom.products.CustomerTest -->
+      <class name="com.ecom.products.ProductstockTest">
+        <methods>
+          <include name="tocheckNavigationToProductspagepageTest"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="tocheckAddingProdtoStockTest"/>
+        </methods>
+      </class> <!-- com.ecom.products.ProductstockTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
